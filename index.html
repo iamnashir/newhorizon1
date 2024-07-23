@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Horizon DXB - Modern Hostel in Dubai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x50?text=New+Horizon+DXB" alt="New Horizon DXB Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-content">
+                <h1>Welcome to New Horizon DXB</h1>
+                <p>Experience Dubai's vibrant culture in our modern hostel</p>
+                <a href="#rooms" class="cta-button">Explore Rooms</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>New Horizon DXB is a cutting-edge hostel nestled in the heart of Dubai's Jumeirah Beach
+                            Residence (JBR). We offer a unique blend of comfort, style, and affordability for the modern
+                            traveler.</p>
+                        <p>Our mission is to provide an unforgettable stay that allows you to immerse yourself in
+                            Dubai's cosmopolitan atmosphere while enjoying the warmth of a community-driven space.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://source.unsplash.com/800x600/?hostel,interior" alt="New Horizon DXB Interior">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms">
+            <div class="container">
+                <h2>Our Rooms</h2>
+                <div class="room-grid">
+                    <div class="room-card">
+                        <img src="https://source.unsplash.com/300x200/?hostel,dorm" alt="Mixed Dorm">
+                        <h3>Mixed Dorm</h3>
+                        <p>Comfortable 6-bed dorms with personal lockers and reading lights.</p>
+                    </div>
+                    <div class="room-card">
+                        <img src="https://source.unsplash.com/300x200/?hostel,female" alt="Female-Only Dorm">
+                        <h3>Female-Only Dorm</h3>
+                        <p>Secure and cozy 4-bed dorms exclusively for female travelers.</p>
+                    </div>
+                    <div class="room-card">
+                        <img src="https://source.unsplash.com/300x200/?hostel,private" alt="Private Room">
+                        <h3>Private Room</h3>
+                        <p>Spacious private rooms for those seeking more privacy and comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilities">
+            <div class="container">
+                <h2>Our Facilities</h2>
+                <div class="facility-grid">
+                    <div class="facility-item">
+                        <i class='bx bx-wifi'></i>
+                        <h3>Free High-Speed Wi-Fi</h3>
+                    </div>
+                    <div class="facility-item">
+                        <i class='bx bx-restaurant'></i>
+                        <h3>Communal Kitchen</h3>
+                    </div>
+                    <div class="facility-item">
+                        <i class='bx bx-tv'></i>
+                        <h3>Entertainment Lounge</h3>
+                    </div>
+                    <div class="facility-item">
+                        <i class='bx bx-bath'></i>
+                        <h3>24/7 Hot Showers</h3>
+                    </div>
+                    <div class="facility-item">
+                        <i class='bx bx-broadcast'></i>
+                        <h3>Daily Events</h3>
+                    </div>
+                    <div class="facility-item">
+                        <i class='bx bx-run'></i>
+                        <h3>Fitness Area</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?hostel,lounge"
+                                alt="Hostel Lounge"></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?hostel,kitchen"
+                                alt="Hostel Kitchen"></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?hostel,bedroom"
+                                alt="Hostel Bedroom"></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?hostel,bathroom"
+                                alt="Hostel Bathroom"></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?hostel,rooftop"
+                                alt="Hostel Rooftop"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <h2>Our Rates</h2>
+                <div class="pricing-card">
+                    <h3>Standard Rate</h3>
+                    <p class="price">
+                        <span class="original-price">150 AED</span>
+                        <br>
+                        <span class="discount-price">50 AED</span> per night
+                    </p>
+                    <p>Limited time discount!</p>
+                    <a href="#contact" class="cta-button">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <div class="container">
+                <h2>Location</h2>
+                <div id="map"></div>
+                <div class="location-info">
+                    <p><i class='bx bx-map'></i> Bahar 1, JBR, Dubai, United Arab Emirates</p>
+                    <p><i class='bx bx-train'></i> 5 minutes walk from DMCC Metro Station</p>
+                    <p><i class='bx bx-water'></i> 2 minutes walk to Jumeirah Beach</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
+                    <form id="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <p><i class='bx bx-phone'></i> +971 4 123 4567</p>
+                        <p><i class='bx bx-envelope'></i> info@newhorizondxb.com</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 New Horizon DXB. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
