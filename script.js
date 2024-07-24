@@ -140,3 +140,48 @@ backToTopButton.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Booking button and dropdown functionality
+const bookingButton = document.querySelector('.booking-button');
+const bookingDropdown = document.querySelector('.booking-dropdown');
+const bookingOptions = document.querySelectorAll('.booking-option');
+
+bookingButton.addEventListener('click', () => {
+  bookingDropdown.classList.toggle('active');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+  if (!bookingButton.contains(e.target) && !bookingDropdown.contains(e.target)) {
+    bookingDropdown.classList.remove('active');
+  }
+});
+
+// Handle booking option clicks
+bookingOptions.forEach(option => {
+  option.addEventListener('click', (e) => {
+    e.preventDefault();
+    const platform = e.target.dataset.platform;
+    let bookingUrl;
+
+    switch (platform) {
+      case 'hostelbooking':
+        bookingUrl = 'https://www.hostelworld.com/'; // Replace with your actual HostelBooking.com link
+        break;
+      case 'booking':
+        bookingUrl = 'https://www.booking.com/'; // Replace with your actual Booking.com link
+        break;
+      case 'agoda':
+        bookingUrl = 'https://www.agoda.com/'; // Replace with your actual Agoda link
+        break;
+      case 'makemytrip':
+        bookingUrl = 'https://www.makemytrip.com/'; // Replace with your actual MakeMyTrip link
+        break;
+      default:
+        bookingUrl = '#';
+    }
+
+    window.open(bookingUrl, '_blank');
+    bookingDropdown.classList.remove('active');
+  });
+});

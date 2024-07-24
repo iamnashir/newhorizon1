@@ -446,3 +446,137 @@ footer {
         font-size: 1rem;
     }
 }
+.converter-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #667eea;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.pricing-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-card h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1.5rem;
+}
+
+.discount-price {
+    color: var(--accent-color);
+}
+
+.booking-button-container {
+    width: 100%;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.booking-button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.booking-button:hover {
+    background-color: var(--accent-color);
+}
+
+.booking-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    z-index: 10;
+}
+
+.booking-dropdown.active {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.booking-option {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.booking-option:hover {
+    background-color: var(--bg-color);
+}
