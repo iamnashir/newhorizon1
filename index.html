@@ -16,7 +16,7 @@
     <header>
         <nav id="navbar">
             <div class="logo">
-                <img src="https://via.placeholder.com/150x50?text=New+Horizon+DXB" alt="New Horizon DXB Logo">
+                <h1 class="logo-text">New Horizon DXB</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -36,6 +36,20 @@
 
     <main>
         <section id="home">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/Ain Dubai.jpeg" alt="AIN DUBAI">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/Bahar.jpeg" alt="BAHAR RESIDENCE">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/bahar view.jpg" alt="Bahar View">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
             <div class="hero-content">
                 <h1>Welcome to New Horizon DXB</h1>
                 <p>Experience Dubai's vibrant culture in our modern hostel</p>
@@ -55,7 +69,7 @@
                             Dubai's cosmopolitan atmosphere while enjoying the warmth of a community-driven space.</p>
                     </div>
                     <div class="about-image">
-                        <img src="https://source.unsplash.com/800x600/?hostel,interior" alt="New Horizon DXB Interior">
+                        <img src="./images/lobby.jpeg" alt="New Horizon DXB Interior">
                     </div>
                 </div>
             </div>
@@ -66,7 +80,7 @@
                 <h2>Our Rooms</h2>
                 <div class="room-grid">
                     <div class="room-card">
-                        <img src="https://source.unsplash.com/300x200/?hostel,dorm" alt="Mixed Dorm">
+                        <img src="./images/Bed.jpeg" alt="Mixed Dorm">
                         <h3>Mixed Dorm</h3>
                         <p>Comfortable 6-bed dorms with personal lockers and reading lights.</p>
                     </div>
@@ -102,16 +116,13 @@
                     </div>
                     <div class="facility-item">
                         <i class='bx bx-bath'></i>
-                        <h3>24/7 Hot Showers</h3>
+                        <h3>24/7 Hot & Cold Showers</h3>
                     </div>
                     <div class="facility-item">
-                        <i class='bx bx-broadcast'></i>
-                        <h3>Daily Events</h3>
+                        <i class='bx bx-cctv'></i>
+                        <h3>24/7 CCTV Security Monitoring</h3>
                     </div>
-                    <div class="facility-item">
-                        <i class='bx bx-run'></i>
-                        <h3>Fitness Area</h3>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -119,9 +130,9 @@
         <section id="gallery">
             <div class="container">
                 <h2>Gallery</h2>
-                <div class="swiper mySwiper">
+                <div class="swiper gallerySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?hostel,lounge"
+                        <div class="swiper-slide"><img src="./images/lobby.jpeg"
                                 alt="Hostel Lounge"></div>
                         <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?hostel,kitchen"
                                 alt="Hostel Kitchen"></div>
@@ -198,6 +209,8 @@
             </ul>
         </div>
     </footer>
+
+    <a href="#" id="back-to-top" title="Back to Top"><i class='bx bx-up-arrow-alt'></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>

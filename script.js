@@ -18,8 +18,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Initialize Swiper
-const swiper = new Swiper('.mySwiper', {
+// Initialize Swiper for the home section
+const homeSwiper = new Swiper('#home .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+// Initialize Swiper for the gallery section
+const gallerySwiper = new Swiper('.gallerySwiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -109,4 +123,20 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.style.backgroundColor = 'var(--white)';
     }
+});
+
+// Back to top button functionality
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+backToTopButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
